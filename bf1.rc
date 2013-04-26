@@ -1,0 +1,509 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\bf1.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\bf1.ico"
+IDR_BF1TYPE             ICON                    "res\\bf1Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Experiment"
+    BEGIN
+        MENUITEM "&Biofeedback",                ID_BF_STUDY
+        MENUITEM "1-D Cursor Control -- &Practice", ID_CC_PRACTICE
+        MENUITEM "1-D &Cursor Control -- Trials", ID_CC_STUDY1
+        MENUITEM "&Robot Control -- Practice",  ID_RC_PRACTICE
+        MENUITEM "Robot Control -- &Targets",   ID_RC_STUDY1
+        MENUITEM "&Speech -- 1D",               ID_SPEECH_STUDY1
+    END
+    POPUP "&Sampling"
+    BEGIN
+        MENUITEM "Start",                       ID_SAMPLE_START
+        MENUITEM "S&top",                       ID_SAMPLE_STOP
+    END
+    POPUP "&MVC"
+    BEGIN
+        MENUITEM "&Reset",                      ID_MVC_RESET
+    END
+    POPUP "&Biofeedback"
+    BEGIN
+        MENUITEM "&Settings...",                ID_SETTINGS_DIALOG
+        MENUITEM SEPARATOR
+        MENUITEM "&Open and Set Port",          ID_BF_OPEN
+        MENUITEM "&Close Port",                 ID_BF_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Set &100",                    ID_BF_100
+        MENUITEM "Set &50",                     ID_BF_50
+        MENUITEM "Set &0",                      ID_BF_0
+        MENUITEM SEPARATOR
+        MENUITEM "Drive with &Mean",            ID_BF_DRIVE_MEAN
+        MENUITEM "Drive with &Bayes Filter",    ID_BF_DRIVE_BAYES
+    END
+    POPUP "1-D &Cursor Control"
+    BEGIN
+        MENUITEM "&Settings...",                ID_CCSETTINGS_DIALOG
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About bf1...",               ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About bf1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "bf1 Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG_SETTINGS DIALOG 0, 0, 339, 185
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EMG_CHANNEL,67,31,18,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMG_SENS,50,48,35,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMG_PERIOD,67,65,18,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_BAYES_THRESH,180,29,33,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_BAYES_MAX,180,46,33,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_BAYES_DRIFT,164,63,49,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_BAYES_SWITCH,164,81,49,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIB_COM,306,26,26,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIB_BAY_MAX0,305,63,26,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIB_BAY_MIN100,305,81,25,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIB_MEAN_MAX0,305,135,26,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIB_MEAN_MIN100,305,150,25,13,ES_RIGHT | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,55,159,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,119,159,50,14
+    LTEXT           "EMG Settings",IDC_EMG_TITLE,7,7,44,8,NOT WS_GROUP
+    LTEXT           "Channel (1-8)",IDC_STATIC,7,32,43,8,NOT WS_GROUP
+    LTEXT           "Sensitivity",IDC_STATIC,7,49,43,8,NOT WS_GROUP
+    LTEXT           "Sampling Period (ms)",IDC_STATIC,7,63,43,18,NOT WS_GROUP
+    LTEXT           "Bayesian Filter Settings",IDC_BAYES_TITLE,124,7,74,8,NOT WS_GROUP
+    LTEXT           "Threshold",IDC_STATIC,124,30,43,8,NOT WS_GROUP
+    LTEXT           "Maximum",IDC_STATIC,124,47,43,8,NOT WS_GROUP
+    LTEXT           "Drift",IDC_STATIC,124,64,14,8,NOT WS_GROUP
+    LTEXT           "Switch",IDC_STATIC,124,82,22,8,NOT WS_GROUP
+    LTEXT           "Vibration Settings",IDC_VIB_TITLE,251,7,56,8,NOT WS_GROUP
+    LTEXT           "COM Port",IDC_STATIC,252,27,43,8,NOT WS_GROUP
+    LTEXT           "Max 0",IDC_STATIC,251,65,20,8,NOT WS_GROUP
+    LTEXT           "Min 100",IDC_STATIC,251,81,26,8,NOT WS_GROUP
+    LTEXT           "If Driven by Bayes Filter",IDC_VIB_TITLE2,251,49,74,8,NOT WS_GROUP
+    LTEXT           "Max 0",IDC_STATIC,251,136,20,8,NOT WS_GROUP
+    LTEXT           "Min 100",IDC_STATIC,251,153,26,8,NOT WS_GROUP
+    LTEXT           "If Driven by Mean",IDC_VIB_TITLE3,251,105,74,8,NOT WS_GROUP
+    EDITTEXT        IDC_VIB_MEAN_MVC,305,119,26,13,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "MVC",IDC_STATIC,252,120,16,8,NOT WS_GROUP
+END
+
+IDD_DIALOG_CCSETTINGS DIALOGEX 0, 0, 460, 171
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,169,149,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,227,149,50,14
+    EDITTEXT        IDC_EMG_SENS,285,92,40,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMG_PERIOD,285,108,40,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_BAYES_THRESH,420,80,33,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_BAYES_MAX,420,97,33,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_BAYES_DRIFT,404,114,49,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_BAYES_SWITCH,404,132,49,13,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "EMG Settings",IDC_EMG_TITLE,255,7,44,8,NOT WS_GROUP
+    LTEXT           "Sensitivity",IDC_STATIC,229,89,43,8,NOT WS_GROUP
+    LTEXT           "Sampling Period (ms)",IDC_STATIC,229,102,43,18,NOT WS_GROUP
+    LTEXT           "Bayesian Filter Settings",IDC_BAYES_TITLE,354,65,74,8,NOT WS_GROUP
+    LTEXT           "Threshold",IDC_STATIC,354,81,43,8,NOT WS_GROUP
+    LTEXT           "Maximum",IDC_STATIC,354,98,43,8,NOT WS_GROUP
+    LTEXT           "Drift",IDC_STATIC,354,115,14,8,NOT WS_GROUP
+    LTEXT           "Switch",IDC_STATIC,354,133,22,8,NOT WS_GROUP
+    LTEXT           "Target settings",IDC_STATIC,7,7,48,8
+    PUSHBUTTON      "Load Targets",IDC_BUTTON1,77,52,50,16
+    CONTROL         "1-D 1-DOF",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,35,50,11
+    CONTROL         "1-D 2-DOF",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,12,48,54,13
+    CONTROL         "2-D 4-DOF",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,12,63,51,13
+    GROUPBOX        "Task",IDC_STATIC,7,20,60,63
+    CONTROL         "Stationary",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | WS_GROUP,77,38,47,10
+    CONTROL         "Moving",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,143,38,39,13
+    GROUPBOX        "Targets",IDC_STATIC,71,20,132,62
+    LTEXT           "Display Time (s)",IDC_STATIC,7,117,56,11
+    LTEXT           "Stationary Targets",IDC_STATIC,26,103,73,10
+    EDITTEXT        IDC_CC_STATDISPLAY,68,116,39,14,ES_AUTOHSCROLL
+    LTEXT           "Rest time (s)",IDC_STATIC,7,138,40,8
+    EDITTEXT        IDC_CC_STATREST,68,135,39,14,ES_AUTOHSCROLL
+    LTEXT           "Filtering",IDC_STATIC,354,7,30,14
+    CONTROL         "Linear",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | WS_GROUP,354,22,76,14
+    CONTROL         "Bayesian",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,354,37,58,14
+    LTEXT           "EMG Input 1",IDC_STATIC,229,26,45,10
+    LTEXT           "EMG Input 2",IDC_STATIC,229,42,45,10
+    LTEXT           "EMG Input 3",IDC_STATIC,229,58,45,10
+    LTEXT           "EMG Input 4",IDC_STATIC,229,74,45,10
+    EDITTEXT        IDC_EDIT1,285,24,40,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT2,285,41,40,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT3,285,58,40,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT4,285,75,40,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    PUSHBUTTON      "Load Trajectory",IDC_BUTTON2,139,52,56,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "bf1 MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "bf1"
+            VALUE "LegalCopyright", "Copyright (C) 2012"
+            VALUE "OriginalFilename", "bf1.EXE"
+            VALUE "ProductName", "bf1 Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 332
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_DIALOG_CCSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 453
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "bf1\n\nBf1\n\n\nBf1.Document\nBf1 Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "bf1"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\bf1.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
